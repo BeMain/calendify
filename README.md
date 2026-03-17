@@ -30,6 +30,12 @@ To reload whenever the code changes
 uv run calendify --reload
 ```
 
+### TimeEdit
+To get the id for a course in TimeEdit, select the course(s) in TimeEdit's public schedule viewer, open the Console and run
+```js
+document.getElementById('linksdata').attributes['data-searchidsenc'].nodeValue
+```
+
 ## Contact
 If you have any questions regarding this project or want to contribute, don't hesitate to reach out on GitHub or via email.
 
