@@ -16,8 +16,8 @@ from .utils import (
 
 
 class Source(ABC):
-    @abstractmethod
     @classmethod
+    @abstractmethod
     def parse(cls, data) -> "Self": ...
 
     # TODO: Specify start and end date instead
